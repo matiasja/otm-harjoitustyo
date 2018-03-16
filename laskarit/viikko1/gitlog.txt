@@ -1,0 +1,12 @@
+Matias@DESKTOP-TV082P9 MINGW64 ~/otm_harjoitustyo/laskarit/viikko1 
+(master)
+$ git log --stat | cat
+commit 4b408fd193e17d7de3d7eecf4b997e032f486a3f
+Author: Matias <matias.jalkanen@helsinki.fi>
+Date:   Fri Mar 16 18:08:19 2018 +0200
+
+    initial commit
+
+ README.md | 0
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+
