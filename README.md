@@ -12,3 +12,5 @@
 *viikko 2*
 ------------
 [Alustava määrittelydokumentti.md](https://github.com/matiasja/otm-harjoitustyo/blob/master/dokumentointi/alustava%20m%C3%A4%C3%A4rittelydokumentti.md)
+
+[Työaikakirjanpito](https://github.com/matiasja/otm-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
