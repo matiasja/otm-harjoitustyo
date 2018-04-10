@@ -50,8 +50,9 @@ public class Tammi {
 
     }
 
-    public void Print() {
+    public String Print() {
         int num = 1;
+        String y = "";
         for (num = 1; num < 9; num++) {
 
             String x = "";
@@ -63,8 +64,10 @@ public class Tammi {
                     x = x + "0";
                 }
             }
-            System.out.println(x);
+            y = y + x + "\n";
+           
         }
+        return y;
     }
 
     public void moveLeft(int x, int y) {

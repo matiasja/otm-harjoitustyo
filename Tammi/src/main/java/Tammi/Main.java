@@ -22,9 +22,8 @@ public class Main {
         System.out.println("Tammi");
 
         Tammi tammi = new Tammi();
-        tammi.Print();
         tammi.moveRight(5, 6);
-        tammi.moveLeft(6, 3);
+
         tammi.moveRight(3, 6);
         tammi.moveRight(5, 2);
 
@@ -32,8 +31,9 @@ public class Main {
 
         tammi.moveRight(2, 3);
         System.out.println("");
-        tammi.Print();
-        tammi.whoseTurn();
+        System.out.println(tammi.Print());
+      
+        // tammi.whoseTurn();
     }
 
 }
