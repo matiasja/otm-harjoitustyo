@@ -23,22 +23,15 @@ public class TammiTest {
     }
 
     @Test
-    public void tammiSiirtoja() {
-        tammi.moveRight(5, 6);
+    public void tammiStart() {
 
-        tammi.moveRight(3, 6);
-        tammi.moveRight(5, 2);
 
-        tammi.moveLeft(4, 5);
-
-        tammi.moveRight(2, 3);
-
-        assertEquals("01010100\n"
-                + "10101011\n"
-                + "00010101\n"
-                + "00100000\n"
-                + "00000200\n"
-                + "20200020\n"
+        assertEquals("01010101\n"
+                + "10101010\n"
+                + "01010101\n"
+                + "00000000\n"
+                + "00000000\n"
+                + "20202020\n"
                 + "02020202\n"
                 + "20202020\n", tammi.toString());
         

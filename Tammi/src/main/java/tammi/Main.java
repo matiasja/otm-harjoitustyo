@@ -6,6 +6,7 @@
 package tammi;
 
 import java.util.Scanner;
+import java.util.regex.Pattern;
 
 /**
  *
@@ -22,18 +23,28 @@ public class Main {
         System.out.println("Tammi");
 
         Tammi tammi = new Tammi();
-        tammi.moveRight(5, 6);
 
-        tammi.moveRight(3, 6);
-        tammi.moveRight(5, 2);
-
-        tammi.moveLeft(4, 5);
-
-        tammi.moveRight(2, 3);
         System.out.println("");
-        System.out.println(tammi);
-      
-        // tammi.whoseTurn();
-    }
+        System.out.println(tammi.toString());
+        while (true) {
+            System.out.println("Mitä nappulaa haluat siirtää?");
+            String input = scanner.nextLine();
+            if (input.equals("q")) {
+                break;
+            }
+            if (Pattern.matches("\\d{2}$", input.trim())) {
+                System.out.println("Mihin suuntaan?");
+                String input2 = scanner.nextLine();
+                if (input2.equals("v")) {
+                    tammi.moveLeft(Character.getNumericValue(input.charAt(0)), Character.getNumericValue(input.charAt(1)));
+                }
+                if (input2.equals("o")) {
+                    tammi.moveRight(Character.getNumericValue(input.charAt(0)), Character.getNumericValue(input.charAt(1)));
+                }
+            }
+            System.out.println(tammi);
+            System.out.println("Pelaajan " + tammi.whoseTurn() + " vuoro");
+        }
 
+    }
 }

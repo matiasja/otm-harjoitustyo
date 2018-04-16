@@ -177,7 +177,7 @@ public class Tammi {
                 }
 
             }
-            if (board[x - 1][y - 1] != 0 && board[x - 1][y + 1] != 1 && board[x - 1][y + 1] != 2) {
+            if (board[x - 1][y - 1] != 0 && board[x - 1][y - 1] != 1 && board[x - 1][y - 1] != 2) {
                 System.out.println("Keskity!");
                 return;
             }
@@ -230,7 +230,7 @@ public class Tammi {
                 }
 
             }
-            if (board[x - 1][y + 1] != 0 && board[x - 1][y + 1] != 1 && board[x - 1][y + 1] != 2) {
+            if (board[x + 1][y + 1] != 0 && board[x + 1][y + 1] != 1 && board[x + 1][y + 1] != 2) {
                 System.out.println("Keskity!");
                 return;
             }
@@ -269,7 +269,7 @@ public class Tammi {
                 }
 
             }
-            if (board[x - 1][y - 1] != 0 && board[x - 1][y + 1] != 1 && board[x - 1][y + 1] != 2) {
+            if (board[x + 1][y - 1] != 0 && board[x + 1][y - 1] != 1 && board[x + 1][y - 1] != 2) {
                 System.out.println("Keskity!");
                 return;
             }
