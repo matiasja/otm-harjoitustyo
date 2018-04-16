@@ -23,7 +23,7 @@ public class Tammi {
         board[2][1] = 1;
         board[4][1] = 1;
         board[6][1] = 1;
-        board[8][2] = 1;
+        board[8][1] = 1;
         board[1][2] = 1;
         board[3][2] = 1;
         board[5][2] = 1;
@@ -46,11 +46,34 @@ public class Tammi {
         board[5][8] = 2;
         board[7][8] = 2;
 
+        board[0][0] = 9;
+        board[0][1] = 9;
+        board[0][2] = 9;
+        board[0][3] = 9;
+        board[0][4] = 9;
+        board[0][5] = 9;
+        board[0][6] = 9;
+        board[0][7] = 9;
+        board[0][8] = 9;
+ 
+
+
+        board[1][0] = 9;
+        board[2][0] = 9;
+        board[3][0] = 9;
+        board[4][0] = 9;
+        board[5][0] = 9;
+        board[6][0] = 9;
+        board[7][0] = 9;
+        board[8][0] = 9;
+
+
         this.board = board;
 
     }
 
-    public String Print() {
+    @Override
+    public String toString() {
         int num = 1;
         String y = "";
         for (num = 1; num < 9; num++) {
@@ -65,7 +88,7 @@ public class Tammi {
                 }
             }
             y = y + x + "\n";
-           
+
         }
         return y;
     }
@@ -115,36 +138,38 @@ public class Tammi {
                 }
 
             }
-
-            if (turn == 1) {
-                this.turn = 2;
+            if (board[x - 1][y + 1] != 0 && board[x - 1][y + 1] != 1 && board[x - 1][y + 1] != 2) {
+                System.out.println("Keskity!");
                 return;
             }
-            this.turn = 1;
+            this.turn = 2;
+            return;
+
         }
 
         if (turn == 2) {
-            if (board[x - 1][y + 1] == 2) {
+            if (board[x - 1][y - 1] == 2) {
                 System.out.println("Ruudussa on jo oma nappula!");
                 return;
             }
-            if (board[x - 1][y + 1] == 0) {
+            if (board[x - 1][y - 1] == 0) {
                 board[x][y] = 0;
-                board[x - 1][y + 1] = turn;
+
+                board[x - 1][y - 1] = turn;
             }
 
-            if (board[x - 1][y + 1] == 1) {
+            if (board[x - 1][y - 1] == 1) {
 
-                if (board[x - 2][y + 2] != 0) {
-                    if (board[x][y + 2] != 0) {
+                if (board[x - 2][y - 2] != 0) {
+                    if (board[x][y - 2] != 0) {
                         System.out.println("Laiton siirto.");
                         return;
                     }
                 }
 
                 board[x][y] = 0;
-                board[x - 1][y + 1] = 0;
-                board[x - 2][y + 2] = 0;
+                board[x - 1][y - 1] = 0;
+                board[x - 2][y - 2] = turn;
 
                 if (canYou(x, y)) {
                     System.out.println("syötkö vasemmalle vai oikealle?");
@@ -152,12 +177,12 @@ public class Tammi {
                 }
 
             }
-
-            if (turn == 1) {
-                this.turn = 2;
+            if (board[x - 1][y - 1] != 0 && board[x - 1][y + 1] != 1 && board[x - 1][y + 1] != 2) {
+                System.out.println("Keskity!");
                 return;
             }
             this.turn = 1;
+            return;
         }
     }
 
@@ -205,12 +230,13 @@ public class Tammi {
                 }
 
             }
-
-            if (turn == 1) {
-                this.turn = 2;
+            if (board[x - 1][y + 1] != 0 && board[x - 1][y + 1] != 1 && board[x - 1][y + 1] != 2) {
+                System.out.println("Keskity!");
                 return;
             }
-            this.turn = 1;
+            this.turn = 2;
+            return;
+
         }
 
         if (turn == 2) {
@@ -224,30 +250,31 @@ public class Tammi {
                 board[x + 1][y - 1] = 2;
             }
 
-            if (board[x + 1][y + 1] == 1) {
+            if (board[x + 1][y - 1] == 1) {
 
-                if (board[x + 2][y + 2] != 0) {
-                    if (board[x][y + 2] != 0) {
+                if (board[x + 2][y - 2] != 0) {
+                    if (board[x][y - 2] != 0) {
                         System.out.println("Laiton siirto.");
                         return;
                     }
                 }
 
                 board[x][y] = 0;
-                board[x + 1][y + 1] = 0;
-                board[x + 2][y + 2] = turn;
+                board[x + 1][y - 1] = 0;
+                board[x + 2][y - 2] = turn;
 
-                if (canYou(x + 2, y + 2)) {
+                if (canYou(x + 2, y - 2)) {
                     System.out.println("syötkö vasemmalle vai oikealle?");
                     return;
                 }
 
-                if (turn == 1) {
-                    this.turn = 2;
-                    return;
-                }
-                this.turn = 1;
             }
+            if (board[x - 1][y - 1] != 0 && board[x - 1][y + 1] != 1 && board[x - 1][y + 1] != 2) {
+                System.out.println("Keskity!");
+                return;
+            }
+            this.turn = 1;
+            return;
         }
     }
 
@@ -271,18 +298,18 @@ public class Tammi {
             return false;
         }
         if (turn == 2) {
-            if (board[x + 1][y + 1] == 0) {
+            if (board[x + 1][y - 1] == 0) {
                 return true;
             }
 
-            if (board[x - 1][y + 1] == 0) {
+            if (board[x - 1][y - 1] == 0) {
                 return true;
             }
-            if (board[x + 1][y + 1] == 1) {
-                if (board[x + 2][y + 2] == 0) {
+            if (board[x + 1][y - 1] == 1) {
+                if (board[x + 2][y - 2] == 0) {
                     return true;
                 }
-                if (board[x][y + 2] == 0) {
+                if (board[x][y - 2] == 0) {
                     return true;
                 }
             }
@@ -290,9 +317,9 @@ public class Tammi {
         }
         return false;
     }
-    
-    public void whoseTurn() {
-        System.out.println(turn);
-        return;
+
+    public int whoseTurn() {
+
+        return turn;
     }
 }

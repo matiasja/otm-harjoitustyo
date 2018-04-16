@@ -31,7 +31,7 @@ public class Main {
 
         tammi.moveRight(2, 3);
         System.out.println("");
-        System.out.println(tammi.Print());
+        System.out.println(tammi);
       
         // tammi.whoseTurn();
     }

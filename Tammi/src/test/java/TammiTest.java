@@ -40,7 +40,7 @@ public class TammiTest {
                 + "00000200\n"
                 + "20200020\n"
                 + "02020202\n"
-                + "20202020\n", tammi.Print());
+                + "20202020\n", tammi.toString());
         
     }
 
