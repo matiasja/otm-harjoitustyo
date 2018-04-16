@@ -1,5 +1,5 @@
 
-import Tammi.Tammi;
+import tammi.Tammi;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
