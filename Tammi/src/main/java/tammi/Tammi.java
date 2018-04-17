@@ -5,8 +5,6 @@
  */
 package tammi;
 
-import java.util.ArrayList;
-import java.util.List;
 
 /**
  *
@@ -46,27 +44,24 @@ public class Tammi {
         board[5][8] = 2;
         board[7][8] = 2;
 
-        board[0][0] = 9;
-        board[0][1] = 9;
-        board[0][2] = 9;
-        board[0][3] = 9;
-        board[0][4] = 9;
-        board[0][5] = 9;
-        board[0][6] = 9;
-        board[0][7] = 9;
-        board[0][8] = 9;
- 
+        board[0][0] = -1;
+        board[0][1] = -1;
+        board[0][2] = -1;
+        board[0][3] = -1;
+        board[0][4] = -1;
+        board[0][5] = -1;
+        board[0][6] = -1;
+        board[0][7] = -1;
+        board[0][8] = -1;
 
-
-        board[1][0] = 9;
-        board[2][0] = 9;
-        board[3][0] = 9;
-        board[4][0] = 9;
-        board[5][0] = 9;
-        board[6][0] = 9;
-        board[7][0] = 9;
-        board[8][0] = 9;
-
+        board[1][0] = -1;
+        board[2][0] = -1;
+        board[3][0] = -1;
+        board[4][0] = -1;
+        board[5][0] = -1;
+        board[6][0] = -1;
+        board[7][0] = -1;
+        board[8][0] = -1;
 
         this.board = board;
 

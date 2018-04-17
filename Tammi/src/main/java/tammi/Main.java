@@ -20,12 +20,9 @@ public class Main {
     public static void main(String[] args) {
         // TODO code application logic here
         Scanner scanner = new Scanner(System.in);
-        System.out.println("Tammi");
-
+//        UI ui = new UI(scanner);
+//        ui.start();
         Tammi tammi = new Tammi();
-
-        System.out.println("");
-        System.out.println(tammi.toString());
         while (true) {
             System.out.println("Mitä nappulaa haluat siirtää?");
             String input = scanner.nextLine();
@@ -45,6 +42,5 @@ public class Main {
             System.out.println(tammi);
             System.out.println("Pelaajan " + tammi.whoseTurn() + " vuoro");
         }
-
     }
 }
