@@ -6,4 +6,7 @@
 | 9.4. | 3    | Viikko 3 harjoitustyön tehtäviä. |
 | 10.4. | 2    | Viikko 3 harjoitustyön tehtävät. |
 | 16.4. | 4    | Viikko 4 harjoitustyön tehtäviä. |
+| 17.4. | 5    | Viikko 4 harjoitustyön tehtäviä. |
 
+
+Yhteensä: 15
