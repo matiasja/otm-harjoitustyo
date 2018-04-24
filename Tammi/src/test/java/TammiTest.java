@@ -1,14 +1,9 @@
 
-import tammi.Tammi;
+import tammi.game.Tammi;
 import static org.junit.Assert.assertEquals;
 import org.junit.Before;
 import org.junit.Test;
 
-/*
- * To change this license header, choose License Headers in Project Properties.
- * To change this template file, choose Tools | Templates
- * and open the template in the editor.
- */
 /**
  *
  * @author Matias
@@ -25,6 +20,35 @@ public class TammiTest {
     @Test
     public void tammiStart() {
 
+        assertEquals("01010101\n"
+                + "10101010\n"
+                + "01010101\n"
+                + "00000000\n"
+                + "00000000\n"
+                + "20202020\n"
+                + "02020202\n"
+                + "20202020\n", tammi.toString());
+
+    }
+
+    @Test
+    public void tammiMove1() {
+        tammi.moveRight(1, 6);
+
+        assertEquals("01010101\n"
+                + "10101010\n"
+                + "01010101\n"
+                + "00000000\n"
+                + "02000000\n"
+                + "00202020\n"
+                + "02020202\n"
+                + "20202020\n", tammi.toString());
+
+    }
+    
+        @Test
+    public void tammiMove2() {
+        tammi.moveLeft(1, 6);
 
         assertEquals("01010101\n"
                 + "10101010\n"
@@ -34,7 +58,7 @@ public class TammiTest {
                 + "20202020\n"
                 + "02020202\n"
                 + "20202020\n", tammi.toString());
-        
+
     }
 
 }
