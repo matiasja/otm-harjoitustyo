@@ -7,6 +7,7 @@
 | 10.4. | 2    | Viikko 3 harjoitustyön tehtävät. |
 | 16.4. | 4    | Viikko 4 harjoitustyön tehtäviä. |
 | 17.4. | 5    | Viikko 4 harjoitustyön tehtäviä. |
+| 21.4. | 4    | harjoitustyö: UI |
+| 24.4. | 9    | harjoitustyö: checkstyle, tammi. |
 
-
-Yhteensä: 15
+Yhteensä: 28
