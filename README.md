@@ -8,3 +8,5 @@
 [Käyttöohje](https://github.com/matiasja/otm-harjoitustyo/blob/master/dokumentointi/k%C3%A4ytt%C3%B6ohje.md)
 
 [Arkkitehtuuri](https://github.com/matiasja/otm-harjoitustyo/blob/master/dokumentointi/arkkitehtuuri.md)
+
+[Release](https://github.com/matiasja/otm-harjoitustyo/releases/download/viikko5/Tammi1.0.jar)
