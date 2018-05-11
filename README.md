@@ -6,7 +6,7 @@ Tammi peli, jolla on graafinen käyttöliittymä.
 
 ## Dokumentaatio
 
-[Alustava määrittelydokumentti](https://github.com/matiasja/otm-harjoitustyo/blob/master/dokumentointi/alustava%20m%C3%A4)
+[Alustava määrittelydokumentti](https://github.com/matiasja/otm-harjoitustyo/blob/master/dokumentointi/alustava%20m%C3%A4%C3%A4rittelydokumentti.md)
 
 [Työaikakirjanpito](https://github.com/matiasja/otm-harjoitustyo/blob/master/dokumentointi/tuntikirjanpito.md)
 
