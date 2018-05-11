@@ -56,9 +56,6 @@ public class Tammi {
      * @param start Liikutettavan nappulan ruutu.
      * @param end Haluttu maaliruutu.
      *
-     * @see performMove(final Square start, final Square end)
-     * @see isValidMove(final Square start, final Square end)
-     *
      * @return kertoo onko siirto tehty.
      */
     public final boolean move(final Square start, final Square end) {
