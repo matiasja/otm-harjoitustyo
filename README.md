@@ -14,9 +14,9 @@ Tammi peli, jolla on graafinen käyttöliittymä.
 
 ## Releaset
 
-[Release 1](https://github.com/matiasja/otm-harjoitustyo/releases/download/viikko5/Tammi1.0.jar)
+[Release viikko5](https://github.com/matiasja/otm-harjoitustyo/releases/download/viikko5/Tammi1.0.jar)
 
-Release 2....
+[Release palautus](https://github.com/matiasja/otm-harjoitustyo/releases/download/Palautus/Tammi-1.0-SNAPSHOT.jar)
 
 ## Komentorivitoiminnot
 
