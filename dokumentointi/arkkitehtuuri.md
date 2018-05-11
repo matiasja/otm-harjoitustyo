@@ -24,8 +24,9 @@ Tammi() joka muodostaa laudan.
 move(-), isValidMove(-), isValidCapture(-), performMove(-), canContinue(-), jotka toteuttavat liikkumisen sääntöjen mukaisesti.
 
 
+
 ## Ohjelman puutteet ja jatko
 
 Peliin ei ole vielä lisätty kuninkaita, eikä peliä voi voittaa tai lopettaa muutakuin sulkemalla pelin.
 Nämä on kuitenkin helppo lisätä, esim. tekemällä Piece luokkaan kuninkaat Piece.WHITEKING, Piece.BLACKKING.
-ja peli lopetus esim tekemällä vuoron päätteeksi Piece laskurin, joka lopettaa pelin jos yhden värisiä nappuloita on 0.
+Ja pelin lopetus esim tekemällä vuoron päätteeksi Piece laskurin, joka lopettaa pelin jos yhden värisiä nappuloita on 0.
