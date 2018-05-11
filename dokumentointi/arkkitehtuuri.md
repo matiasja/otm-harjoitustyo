@@ -12,7 +12,7 @@ Luokka Tammi käyttää olioita Square ja Piece, joista lauta ja nappulat muodos
 
 graafinen käyttöliittymä GUIlle on omat luokat PiecePanel, SquarePanel, TammiFrame, joiden avulla GUI piirtää laudan ja nappulat.
 
-(<img src="https://github.com/matiasja/otm-harjoitustyo/blob/master/dokumentointi/kuvat/luokkakaavio.jpg" width="200" data-rotate="180">)
+(<img src="https://github.com/matiasja/otm-harjoitustyo/blob/master/dokumentointi/kuvat/luokkakaavio.jpg" width="200" data-rotate="270">)
 
 
 ## Ominaisuudet
